@@ -1,29 +1,30 @@
 # DisciplineTest
 
-package com.example.server;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
-import org.springframework.dao.DataIntegrityViolationException;
 
-import javax.validation.ConstraintViolation;
-import javax.validation.Validation;
-import javax.validation.Validator;
-import javax.validation.ValidatorFactory;
 
-import com.example.server.Discipline.entity.Discipline;
-import com.example.server.Discipline.repository.DisciplineRepository;
+    package com.example.server;
+    import org.junit.jupiter.api.BeforeEach;
+    import org.junit.jupiter.api.Test;
+    import org.springframework.beans.factory.annotation.Autowired;
+    import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
+    import org.springframework.dao.DataIntegrityViolationException;
 
-import java.util.Optional;
-import java.util.Set;
+    import javax.validation.ConstraintViolation;
+    import javax.validation.Validation;
+    import javax.validation.Validator;
+    import javax.validation.ValidatorFactory;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertThrows;
+    import com.example.server.Discipline.entity.Discipline;
+    import com.example.server.Discipline.repository.DisciplineRepository;
 
-@DataJpaTest
-public class DisciplineTest {
+    import java.util.Optional;
+    import java.util.Set;
 
+    import static org.junit.jupiter.api.Assertions.assertEquals;
+       import static org.junit.jupiter.api.Assertions.assertThrows;
+
+    @DataJpaTest
+    public class DisciplineTest {
     private Validator validator;
 
     @Autowired
